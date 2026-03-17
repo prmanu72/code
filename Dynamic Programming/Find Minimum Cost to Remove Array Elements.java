@@ -50,6 +50,89 @@ Constraints:
 1 <= nums[i] <= 106
 */
 
+/*Intuition
+
+At every step, you are allowed to pick any 2 elements from the first 3 and remove them, paying a cost equal to their maximum.
+
+🔑 Core Observation
+
+From any 3 elements:
+
+[a, b, c]
+
+You:
+
+Remove 2 elements
+
+Keep 1 element (this becomes the carry for the next step)
+
+So the real decision is:
+
+❗ Which element should we keep for future?
+
+⚖️ Why Greedy Fails
+
+Removing the smallest pair is not always optimal
+
+Removing the largest early might reduce future costs
+
+Decisions have future impact due to carry
+
+👉 So:
+
+Local optimal ≠ Global optimal
+💡 DP Insight
+
+We define a state:
+
+dp(idx, carry)
+
+Meaning:
+
+idx → next index to process
+
+carry → leftover element from previous step
+
+🔄 Transition Logic
+
+At each step, we have:
+
+carry = a
+nums[idx] = b
+nums[idx+1] = c
+
+Three choices:
+
+Remove (b, c), keep a
+
+Remove (a, c), keep b
+
+Remove (a, b), keep c
+
+Each choice:
+
+Adds cost = max(removed pair)
+
+Passes new carry forward
+
+🧱 Base Cases
+
+If no elements left → return carry
+
+If one element left → return max(carry, nums[idx])
+
+🚀 Why Memoization
+
+Same (idx, carry) state repeats
+
+Without memo → exponential
+
+With memo → polynomial
+
+🎯 Final Idea in One Line
+
+At every step, try all ways of removing 2 out of 3 elements, carry forward the remaining one, and use DP to minimize total cost.
+*/
 class Solution {
 
     static class Pair 
