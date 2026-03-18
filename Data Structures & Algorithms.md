@@ -47,3 +47,5 @@
 | 7 | Generate Parentheses | [GenerateParentheses.md](Recursion/GenerateParentheses.md) | String, Constraint Satisfaction |
 | 8 | N-Bit Binary Numbers | [NBitBinary.md](Recursion/NBitBinary.md) | Binary, Prefix Property |
 | 9 | Sort Array using Recursion | [SortUsingRecursion.md](Recursion/SortUsingRecursion.md) | Array, Insertion Sort |
+| 10 | Kth Symbol in Grammar | [KthGrammar.md](Recursion/KthGrammar.md) | Pattern, Recursion |
+| 11 | Height of Binary Tree | [HeightOfBinaryTree.md](Tree/HeightOfBinaryTree.md) | Tree, DFS |
