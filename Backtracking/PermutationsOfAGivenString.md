@@ -80,22 +80,21 @@ import java.util.*;
 
 class Solution {
     public List<String> findPermutation(String s) {
-        ArrayList<String> res = new ArrayList<>();
+        List<String> res = new ArrayList<>();
         char[] arr = s.toCharArray();
 
-        solve(arr, 0, res);
+        backtrack(arr, 0, res);
         Collections.sort(res);
-
         return res;
     }
 
-    void solve(char[] arr, int idx, ArrayList<String> res) {
+    private void backtrack(char[] arr, int idx, List<String> res) {
         if (idx == arr.length - 1) {
             res.add(new String(arr));
             return;
         }
 
-        HashSet<Character> used = new HashSet<>();
+        Set<Character> used = new HashSet<>();
 
         for (int i = idx; i < arr.length; i++) {
             if (used.contains(arr[i])) {
@@ -104,12 +103,12 @@ class Solution {
 
             used.add(arr[i]);
             swap(arr, i, idx);
-            solve(arr, idx + 1, res);
+            backtrack(arr, idx + 1, res);
             swap(arr, i, idx);
         }
     }
 
-    void swap(char[] arr, int i, int j) {
+    private void swap(char[] arr, int i, int j) {
         char temp = arr[i];
         arr[i] = arr[j];
         arr[j] = temp;
@@ -158,14 +157,14 @@ import java.util.*;
 
 class Solution {
     public List<String> findPermutation(String s) {
-        ArrayList<String> res = new ArrayList<>();
+        List<String> res = new ArrayList<>();
         char[] arr = s.toCharArray();
 
-        solve(arr, 0, res);
+        backtrack(arr, 0, res);
         return res;
     }
 
-    void solve(char[] arr, int idx, ArrayList<String> res) {
+    private void backtrack(char[] arr, int idx, List<String> res) {
         if (idx == arr.length - 1) {
             res.add(new String(arr));
             return;
@@ -173,12 +172,12 @@ class Solution {
 
         for (int i = idx; i < arr.length; i++) {
             swap(arr, i, idx);
-            solve(arr, idx + 1, res);
+            backtrack(arr, idx + 1, res);
             swap(arr, i, idx);
         }
     }
 
-    void swap(char[] arr, int i, int j) {
+    private void swap(char[] arr, int i, int j) {
         char temp = arr[i];
         arr[i] = arr[j];
         arr[j] = temp;
