@@ -6,6 +6,7 @@
 - [Sliding Window](#sliding-window)
 - [Binary Search](#binary-search)
 - [Recursion](#recursion)
+- [Backtracking](#backtracking)
 
 ---
 
@@ -50,3 +51,19 @@
 | 10 | Kth Symbol in Grammar | [KthGrammar.md](Recursion/KthGrammar.md) | Pattern, Recursion |
 | 11 | Height of Binary Tree | [HeightOfBinaryTree.md](Tree/HeightOfBinaryTree.md) | Tree, DFS |
 | 12 | Josephus Problem | [JosephusProblem.md](Recursion/JosephusProblem.md) | Simulation, Mathematics |
+
+---
+
+## Backtracking
+
+| # | Problem | Link | Topic |
+|---|---------|------|-------|
+| 1 | Largest Number After K Swaps | [LargestNumberAfterKSwaps.md](Backtracking/LargestNumberAfterKSwaps.md) | String, Greedy Choice, Backtracking |
+| 2 | Letter Combinations of a Phone Number | [LetterCombinationsOfAPhoneNumber.md](Backtracking/LetterCombinationsOfAPhoneNumber.md) | String, Combination Generation |
+| 3 | N Digit Numbers With Digits In Increasing Order | [NDigitNumbersWithDigitsInIncreasingOrder.md](Backtracking/NDigitNumbersWithDigitsInIncreasingOrder.md) | Number Generation, Constraints |
+| 4 | N-Queens | [NQueens.md](Backtracking/NQueens.md) | Chessboard, Constraint Satisfaction |
+| 5 | Palindrome Partitioning | [PalindromePartitioning.md](Backtracking/PalindromePartitioning.md) | String Partitioning, Palindrome |
+| 6 | Permutations of a Given String | [PermutationsOfAGivenString.md](Backtracking/PermutationsOfAGivenString.md) | Permutations, String Swapping |
+| 7 | Rat in a Maze | [RatInAMaze.md](Backtracking/RatInAMaze.md) | Grid Paths, DFS |
+| 8 | Sudoku Solver | [SudokuSolver.md](Backtracking/SudokuSolver.md) | Grid, Constraint Satisfaction |
+| 9 | Word Break II | [WordBreak2.md](Backtracking/WordBreak2.md) | String Segmentation, Dictionary Search |
