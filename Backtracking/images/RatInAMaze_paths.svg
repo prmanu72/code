@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="280" viewBox="0 0 720 280">
+  <defs>
+    <style>
+      .title { font: 700 20px Arial, sans-serif; fill: #1f2937; }
+      .label { font: 600 15px Arial, sans-serif; fill: #374151; }
+      .cell { stroke: #475569; stroke-width: 2; }
+      .open { fill: #f8fafc; }
+      .blocked { fill: #cbd5e1; }
+      .pathA { fill: #f59e0b; opacity: 0.35; }
+      .pathB { fill: #10b981; opacity: 0.35; }
+      .text { font: 700 18px Arial, sans-serif; fill: #0f172a; }
+      .small { font: 600 13px Arial, sans-serif; fill: #475569; }
+    </style>
+  </defs>
+
+  <text x="24" y="32" class="title">Rat in a Maze: two valid paths for the sample grid</text>
+
+  <text x="60" y="62" class="label">Path 1: DDRDRR</text>
+  <rect x="40" y="80" width="40" height="40" class="cell open pathA"/>
+  <rect x="80" y="80" width="40" height="40" class="cell blocked"/>
+  <rect x="120" y="80" width="40" height="40" class="cell blocked"/>
+  <rect x="160" y="80" width="40" height="40" class="cell blocked"/>
+
+  <rect x="40" y="120" width="40" height="40" class="cell open pathA"/>
+  <rect x="80" y="120" width="40" height="40" class="cell open"/>
+  <rect x="120" y="120" width="40" height="40" class="cell blocked"/>
+  <rect x="160" y="120" width="40" height="40" class="cell open blocked"/>
+
+  <rect x="40" y="160" width="40" height="40" class="cell open pathA"/>
+  <rect x="80" y="160" width="40" height="40" class="cell open pathA"/>
+  <rect x="120" y="160" width="40" height="40" class="cell blocked"/>
+  <rect x="160" y="160" width="40" height="40" class="cell blocked"/>
+
+  <rect x="40" y="200" width="40" height="40" class="cell blocked"/>
+  <rect x="80" y="200" width="40" height="40" class="cell open pathA"/>
+  <rect x="120" y="200" width="40" height="40" class="cell open pathA"/>
+  <rect x="160" y="200" width="40" height="40" class="cell open pathA"/>
+
+  <text x="56" y="106" class="text">S</text>
+  <text x="176" y="226" class="text">E</text>
+
+  <text x="300" y="62" class="label">Path 2: DRDDRR</text>
+  <rect x="280" y="80" width="40" height="40" class="cell open pathB"/>
+  <rect x="320" y="80" width="40" height="40" class="cell blocked"/>
+  <rect x="360" y="80" width="40" height="40" class="cell blocked"/>
+  <rect x="400" y="80" width="40" height="40" class="cell blocked"/>
+
+  <rect x="280" y="120" width="40" height="40" class="cell open pathB"/>
+  <rect x="320" y="120" width="40" height="40" class="cell open pathB"/>
+  <rect x="360" y="120" width="40" height="40" class="cell blocked"/>
+  <rect x="400" y="120" width="40" height="40" class="cell open"/>
+
+  <rect x="280" y="160" width="40" height="40" class="cell open"/>
+  <rect x="320" y="160" width="40" height="40" class="cell open pathB"/>
+  <rect x="360" y="160" width="40" height="40" class="cell blocked"/>
+  <rect x="400" y="160" width="40" height="40" class="cell blocked"/>
+
+  <rect x="280" y="200" width="40" height="40" class="cell blocked"/>
+  <rect x="320" y="200" width="40" height="40" class="cell open pathB"/>
+  <rect x="360" y="200" width="40" height="40" class="cell open pathB"/>
+  <rect x="400" y="200" width="40" height="40" class="cell open pathB"/>
+
+  <text x="296" y="106" class="text">S</text>
+  <text x="416" y="226" class="text">E</text>
+
+  <text x="520" y="80" class="label">Legend</text>
+  <rect x="520" y="100" width="26" height="26" class="cell open"/>
+  <text x="558" y="119" class="small">open cell</text>
+  <rect x="520" y="138" width="26" height="26" class="cell blocked"/>
+  <text x="558" y="157" class="small">blocked cell</text>
+  <rect x="520" y="176" width="26" height="26" class="cell open pathA"/>
+  <text x="558" y="195" class="small">cells used by one valid path</text>
+  <text x="520" y="234" class="small">The two highlighted routes match</text>
+  <text x="520" y="252" class="small">the sample outputs in the problem.</text>
+</svg>
