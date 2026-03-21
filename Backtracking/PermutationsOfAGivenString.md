@@ -20,7 +20,7 @@ If we use plain swapping backtracking, duplicate characters create duplicate bra
 
 **Recursion tree intuition for `"ABC"`**
 
-![Recursion Tree for Permutations of String "ABC"](./Permutations_of_string.webp)
+![Recursion Tree for Permutations of String "ABC"](./images/Permutations_of_string.webp)
 
 This tree shows the swap-based idea clearly: at each level, we fix one character at the current index and recurse to permute the remaining suffix.
 
@@ -33,9 +33,9 @@ The clean way to do that in a swap-based solution is:
 
 ### Another way to look at it!
 
-  <img src="./Permutations_visualisation.jpeg" alt="Recursion Tree for Permutations of String ABC" width="500" />
+  <img src="./images/Permutations_visualisation.jpeg" alt="Recursion Tree for Permutations of String ABC" width="500" />
 
-  <img src="./Permutatoins_pseudo_code.jpeg" alt="Pseudo code" width="500" />
+  <img src="./images/Permutatoins_pseudo_code.jpeg" alt="Pseudo code" width="500" />
 
 - Instead of deleting from input and adding it to output, replace each character of the string with the first index and find permutations for the rest of the string recursively 
 ---
