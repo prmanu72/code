@@ -86,3 +86,5 @@
 | 10 | Count of Subsets With Given Difference | [CountOfSubsetsWithGivenDifference.md](Dynamic%20Programming/CountOfSubsetsWithGivenDifference.md) | DP, 0/1 Knapsack, Target Sum Reduction |
 | 11 | Target Sum | [TargetSum.md](Dynamic%20Programming/TargetSum.md) | DP, 0/1 Knapsack, Sign Assignment Reduction |
 | 12 | Rod Cutting | [RodCutting.md](Dynamic%20Programming/RodCutting.md) | DP, Unbounded Knapsack |
+| 13 | Coin Change II | [CoinChangeII.md](Dynamic%20Programming/CoinChangeII.md) | DP, Unbounded Knapsack, Counting |
+| 14 | Coin Change | [CoinChange.md](Dynamic%20Programming/CoinChange.md) | DP, Unbounded Knapsack, Minimization |

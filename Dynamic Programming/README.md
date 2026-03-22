@@ -16,3 +16,5 @@
 | 10 | Count of Subsets With Given Difference | [CountOfSubsetsWithGivenDifference.md](./CountOfSubsetsWithGivenDifference.md) | DP, 0/1 Knapsack, Target Sum Reduction |
 | 11 | Target Sum | [TargetSum.md](./TargetSum.md) | DP, 0/1 Knapsack, Sign Assignment Reduction |
 | 12 | Rod Cutting | [RodCutting.md](./RodCutting.md) | DP, Unbounded Knapsack |
+| 13 | Coin Change II | [CoinChangeII.md](./CoinChangeII.md) | DP, Unbounded Knapsack, Counting |
+| 14 | Coin Change | [CoinChange.md](./CoinChange.md) | DP, Unbounded Knapsack, Minimization |
