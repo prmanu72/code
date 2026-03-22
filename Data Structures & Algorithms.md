@@ -67,3 +67,17 @@
 | 7 | Rat in a Maze | [RatInAMaze.md](Backtracking/RatInAMaze.md) | Grid Paths, DFS |
 | 8 | Sudoku Solver | [SudokuSolver.md](Backtracking/SudokuSolver.md) | Grid, Constraint Satisfaction |
 | 9 | Word Break II | [WordBreak2.md](Backtracking/WordBreak2.md) | String Segmentation, Dictionary Search |
+
+---
+
+## Dynamic Programming
+
+| # | Problem | Link | Topic |
+|---|---------|------|-------|
+| 1 | 0/1 Knapsack | [01-Knapsack.md](Dynamic%20Programming/01-Knapsack.md) | DP, Choice Diagram |
+| 2 | Edit Distance | [EditDistance.java](Dynamic%20Programming/EditDistance.java) | String DP |
+| 3 | Find Minimum Cost to Remove Array Elements | [Find Minimum Cost to Remove Array Elements.java](Dynamic%20Programming/Find%20Minimum%20Cost%20to%20Remove%20Array%20Elements.java) | Array DP |
+| 4 | Letter Combinations of a Phone Number | [Letter Combinations of a Phone Number.java](Dynamic%20Programming/Letter%20Combinations%20of%20a%20Phone%20Number.java) | Combinatorics, DP |
+| 5 | Longest Common Subsequence | [LongestCommonSubsequence.java](Dynamic%20Programming/LongestCommonSubsequence.java) | String DP |
+| 6 | Subset Sum Problem | [SubsetSumProblem.md](Dynamic%20Programming/SubsetSumProblem.md) | DP, 0/1 Knapsack Variation |
+| 7 | Partition Equal Subset Sum | [PartitionEqualSubsetSum.md](Dynamic%20Programming/PartitionEqualSubsetSum.md) | DP, Subset Sum Reduction |
