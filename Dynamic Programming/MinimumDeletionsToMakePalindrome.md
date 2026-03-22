@@ -1,6 +1,7 @@
 # Problem
 - Title: Minimum number of deletions
 - Source link: [GeeksforGeeks](https://www.geeksforgeeks.org/problems/minimum-number-of-deletions4610/1)
+- [Leetcode:1312. Minimum Insertion Steps to Make a String Palindrome](https://leetcode.com/problems/minimum-insertion-steps-to-make-a-string-palindrome/)
 - Description:
   Given a string `s`, remove the minimum number of characters so that the remaining string becomes a palindrome. The relative order of the remaining characters must stay the same.
 
