@@ -1,36 +1,65 @@
-/*
-1143. Longest Common Subsequence
-Link: https://leetcode.com/problems/longest-common-subsequence
+# Problem
+- Title: 1143. Longest Common Subsequence
+- Source link: [LeetCode](https://leetcode.com/problems/longest-common-subsequence)
+- Description:
+  Given two strings `text1` and `text2`, return the length of their longest common subsequence. If there is no common subsequence, return `0`.
 
-Given two strings text1 and text2, return the length of their longest common
-subsequence. If there is no common subsequence, return 0.
+- Example:
+  Input: `text1 = "abcde", text2 = "ace"`
+  Output: `3`
+  Explanation: The longest common subsequence is `"ace"`.
 
-Example 1:
-Input: text1 = "abcde", text2 = "ace"
-Output: 3
+- Constraints:
+  - `1 <= text1.length, text2.length <= 1000`
+  - `text1` and `text2` consist of lowercase English characters.
 
-Example 2:
-Input: text1 = "abc", text2 = "abc"
-Output: 3
+---
 
-Example 3:
-Input: text1 = "abc", text2 = "def"
-Output: 0
-*/
+# Intuition
+If the current characters match, they must contribute `1` to the answer and we move both pointers forward. If they do not match, we have two choices: skip one character from `text1` or skip one character from `text2`, and take the better result.
 
+This naturally gives a recursive solution. Since the same `(i, j)` states repeat many times, memoization reduces it to `O(n * m)`. The same recurrence can then be converted into bottom-up DP, and finally optimized to use only two rows.
+
+---
+
+# Approach
+1. Define `lcs(i, j)` as the LCS length of suffixes `text1[i...]` and `text2[j...]`.
+2. Base case: if either string is exhausted, return `0`.
+3. If `text1.charAt(i) == text2.charAt(j)`, then `lcs(i, j) = 1 + lcs(i + 1, j + 1)`.
+4. Otherwise, `lcs(i, j) = max(lcs(i + 1, j), lcs(i, j + 1))`.
+5. Memoization stores each `(i, j)` result to avoid recomputation.
+6. Tabulation builds the same answer iteratively.
+7. Space optimization keeps only the previous and current rows because each DP state depends only on the left cell, upper cell, and upper-left cell.
+
+---
+
+# Complexity
+
+- Time complexity:
+  - Recursion: `O(2^(n + m))` in the worst case
+  - Memoization: `O(n * m)`
+  - Tabulation: `O(n * m)`
+  - Space optimized DP: `O(n * m)`
+
+- Space complexity:
+  - Recursion: `O(n + m)` recursion stack
+  - Memoization: `O(n * m)` plus recursion stack
+  - Tabulation: `O(n * m)`
+  - Space optimized DP: `O(m)`
+
+---
+
+# Code
+```java
 import java.util.Arrays;
 
 class Solution {
 
-    /*
-    Recursion
-    Time: O(2^(n + m)) in the worst case
-    Space: O(n + m) recursion stack
-    */
     public int longestCommonSubsequenceRecursion(String text1, String text2) {
         return lcsRecursive(text1, text2, 0, 0);
     }
 
+    // Recursive
     private int lcsRecursive(String text1, String text2, int i, int j) {
         if (i == text1.length() || j == text2.length()) {
             return 0;
@@ -46,11 +75,7 @@ class Solution {
         );
     }
 
-    /*
-    Memoization
-    Time: O(n * m)
-    Space: O(n * m) + O(n + m) recursion stack
-    */
+    // Memoization
     public int longestCommonSubsequenceMemoization(String text1, String text2) {
         int n = text1.length();
         int m = text2.length();
@@ -82,11 +107,7 @@ class Solution {
         );
     }
 
-    /*
-    Tabulation
-    Time: O(n * m)
-    Space: O(n * m)
-    */
+    // Bottom-up tabulation
     public int longestCommonSubsequenceTabulation(String text1, String text2) {
         int n = text1.length();
         int m = text2.length();
@@ -105,13 +126,7 @@ class Solution {
         return dp[n][m];
     }
 
-    /*
-    Space Optimized DP
-    Time: O(n * m)
-    Space: O(m)
-
-    This is the method used by default for the LeetCode solution.
-    */
+    // Space optimized DP
     public int longestCommonSubsequence(String text1, String text2) {
         int n = text1.length();
         int m = text2.length();
@@ -134,3 +149,9 @@ class Solution {
         return prev[m];
     }
 }
+```
+
+---
+
+# One-line takeaway
+Compare characters from both strings, and when they do not match, try skipping one side while caching or tabulating overlapping subproblems.
