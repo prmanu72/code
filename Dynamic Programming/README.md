@@ -8,3 +8,6 @@
 5. [Longest Common Subsequence](./LongestCommonSubsequence.java)
 6. [Subset Sum Problem](./SubsetSumProblem.md)
 7. [Partition Equal Subset Sum](./PartitionEqualSubsetSum.md)
+8. [Minimum Subset Sum Difference](./MinimumSubsetSumDifference.md)
+9. [Count of Subsets With Given Sum](./CountOfSubsetWithGivenSum.md)
+10. [Count of Subsets With Given Difference](./CountOfSubsetsWithGivenDifference.md)
