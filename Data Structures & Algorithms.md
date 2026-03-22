@@ -85,3 +85,4 @@
 | 9 | Count of Subsets With Given Sum | [CountOfSubsetWithGivenSum.md](Dynamic%20Programming/CountOfSubsetWithGivenSum.md) | DP, 0/1 Knapsack, Counting Variation |
 | 10 | Count of Subsets With Given Difference | [CountOfSubsetsWithGivenDifference.md](Dynamic%20Programming/CountOfSubsetsWithGivenDifference.md) | DP, 0/1 Knapsack, Target Sum Reduction |
 | 11 | Target Sum | [TargetSum.md](Dynamic%20Programming/TargetSum.md) | DP, 0/1 Knapsack, Sign Assignment Reduction |
+| 12 | Rod Cutting | [RodCutting.md](Dynamic%20Programming/RodCutting.md) | DP, Unbounded Knapsack |

@@ -15,3 +15,4 @@
 | 9 | Count of Subsets With Given Sum | [CountOfSubsetWithGivenSum.md](./CountOfSubsetWithGivenSum.md) | DP, 0/1 Knapsack, Counting Variation |
 | 10 | Count of Subsets With Given Difference | [CountOfSubsetsWithGivenDifference.md](./CountOfSubsetsWithGivenDifference.md) | DP, 0/1 Knapsack, Target Sum Reduction |
 | 11 | Target Sum | [TargetSum.md](./TargetSum.md) | DP, 0/1 Knapsack, Sign Assignment Reduction |
+| 12 | Rod Cutting | [RodCutting.md](./RodCutting.md) | DP, Unbounded Knapsack |
