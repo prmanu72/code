@@ -80,7 +80,8 @@
 | 4 | Letter Combinations of a Phone Number | [Letter Combinations of a Phone Number.java](Dynamic%20Programming/Letter%20Combinations%20of%20a%20Phone%20Number.java) | Combinatorics, DP |
 | 5 | Longest Common Subsequence | [LongestCommonSubsequence.java](Dynamic%20Programming/LongestCommonSubsequence.java) | String DP |
 | 6 | Subset Sum Problem | [SubsetSumProblem.md](Dynamic%20Programming/SubsetSumProblem.md) | DP, 0/1 Knapsack Variation |
-| 7 | Partition Equal Subset Sum | [PartitionEqualSubsetSum.md](Dynamic%20Programming/PartitionEqualSubsetSum.md) | DP, Subset Sum Reduction |
-| 8 | Minimum Subset Sum Difference | [MinimumSubsetSumDifference.md](Dynamic%20Programming/MinimumSubsetSumDifference.md) | DP, Subset Sum Variation |
-| 9 | Count of Subsets With Given Sum | [CountOfSubsetWithGivenSum.md](Dynamic%20Programming/CountOfSubsetWithGivenSum.md) | DP, Counting Variation |
-| 10 | Count of Subsets With Given Difference | [CountOfSubsetsWithGivenDifference.md](Dynamic%20Programming/CountOfSubsetsWithGivenDifference.md) | DP, Target Sum Reduction |
+| 7 | Partition Equal Subset Sum | [PartitionEqualSubsetSum.md](Dynamic%20Programming/PartitionEqualSubsetSum.md) | DP, 0/1 Knapsack, Subset Sum Reduction |
+| 8 | Minimum Subset Sum Difference | [MinimumSubsetSumDifference.md](Dynamic%20Programming/MinimumSubsetSumDifference.md) | DP, 0/1 Knapsack, Subset Sum Variation |
+| 9 | Count of Subsets With Given Sum | [CountOfSubsetWithGivenSum.md](Dynamic%20Programming/CountOfSubsetWithGivenSum.md) | DP, 0/1 Knapsack, Counting Variation |
+| 10 | Count of Subsets With Given Difference | [CountOfSubsetsWithGivenDifference.md](Dynamic%20Programming/CountOfSubsetsWithGivenDifference.md) | DP, 0/1 Knapsack, Target Sum Reduction |
+| 11 | Target Sum | [TargetSum.md](Dynamic%20Programming/TargetSum.md) | DP, 0/1 Knapsack, Sign Assignment Reduction |
