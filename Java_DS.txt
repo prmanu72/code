@@ -1,0 +1,276 @@
+ Core Categories
+
+  - Array
+  - Multidimensional array
+  - String as character sequence storage
+  - Linked structure
+  - Stack
+  - Queue
+  - Deque
+  - List
+  - Set
+  - Map
+  - Sorted collections
+  - Navigable collections
+  - Heap / priority queue
+  - Bit set
+  - Enum-based collections
+  - Identity-based collections
+  - Weak-reference-based collections
+  - Concurrent collections
+  - Blocking queues / transfer queues
+  - Copy-on-write collections
+
+  1. Primitive / Basic Structures
+
+  - T[] arrays
+  - char[]
+  - byte[]
+  - Object[]
+  - jagged / multidimensional arrays like int[][]
+
+  2. List Structures
+
+  Interfaces:
+
+  - List
+  - SequencedCollection (newer common ordered abstraction)
+
+  Implementations:
+
+  - ArrayList
+  - LinkedList
+  - Vector
+  - Stack (legacy, extends Vector)
+  - CopyOnWriteArrayList
+
+  3. Set Structures
+
+  Interfaces:
+
+  - Set
+  - SortedSet
+  - NavigableSet
+  - SequencedSet
+
+  Implementations:
+
+  - HashSet
+  - LinkedHashSet
+  - TreeSet
+  - EnumSet
+  - CopyOnWriteArraySet
+  - ConcurrentSkipListSet
+
+  Special set views:
+
+  - Collections.newSetFromMap(...)
+  - ConcurrentHashMap.newKeySet()
+  - IdentityHashMap.keySet()
+  - WeakHashMap.keySet()
+
+  4. Queue / Deque Structures
+
+  Interfaces:
+
+  - Queue
+  - Deque
+  - BlockingQueue
+  - BlockingDeque
+  - TransferQueue
+
+  Implementations:
+
+  - LinkedList
+  - ArrayDeque
+  - PriorityQueue
+  - ConcurrentLinkedQueue
+  - ConcurrentLinkedDeque
+  - ArrayBlockingQueue
+  - LinkedBlockingQueue
+  - LinkedBlockingDeque
+  - PriorityBlockingQueue
+  - DelayQueue
+  - SynchronousQueue
+  - LinkedTransferQueue
+
+  5. Map Structures
+
+  Interfaces:
+
+  - Map
+  - SortedMap
+  - NavigableMap
+  - ConcurrentMap
+  - ConcurrentNavigableMap
+  - SequencedMap
+
+  Implementations:
+
+  - HashMap
+  - LinkedHashMap
+  - TreeMap
+  - Hashtable
+  - WeakHashMap
+  - IdentityHashMap
+  - EnumMap
+  - ConcurrentHashMap
+  - ConcurrentSkipListMap
+  - Properties (legacy, extends Hashtable)
+
+  6. Specialized / Utility Structures
+
+  - BitSet
+  - Dictionary (legacy abstract type)
+  - Hashtable
+  - Vector
+  - Stack
+  - Properties
+  - PriorityQueue
+  - PriorityBlockingQueue
+
+  7. Concurrent / Modified Variants
+
+  These are probably the “modified data structures” you mean.
+
+  Concurrent map/set/list variants:
+
+  - ConcurrentHashMap
+  - ConcurrentSkipListMap
+  - ConcurrentSkipListSet
+  - CopyOnWriteArrayList
+  - CopyOnWriteArraySet
+  - ConcurrentLinkedQueue
+  - ConcurrentLinkedDeque
+
+  Blocking / producer-consumer structures:
+
+  - ArrayBlockingQueue
+  - LinkedBlockingQueue
+  - LinkedBlockingDeque
+  - PriorityBlockingQueue
+  - DelayQueue
+  - SynchronousQueue
+  - LinkedTransferQueue
+
+  Concurrency-related interfaces:
+
+  - ConcurrentMap
+  - ConcurrentNavigableMap
+  - BlockingQueue
+  - BlockingDeque
+  - TransferQueue
+
+  8. Ordering-Based Variants
+
+  Insertion-order / access-order:
+
+  - LinkedHashMap
+  - LinkedHashSet
+
+  Sorted / navigable:
+
+  - TreeMap
+  - TreeSet
+  - ConcurrentSkipListMap
+  - ConcurrentSkipListSet
+
+  Priority-ordered:
+
+  - PriorityQueue
+  - PriorityBlockingQueue
+
+  9. Reference / Identity / Enum Variants
+
+  - WeakHashMap — weak keys
+  - IdentityHashMap — reference equality instead of equals
+  - EnumMap — keys must be enum values
+  - EnumSet — set of enum values
+  - BitSet — compact bit-vector structure
+
+  10. Legacy Structures
+
+  - Vector
+  - Stack
+  - Hashtable
+  - Dictionary
+  - Properties
+
+  11. Interfaces Summary
+
+  Main collection interfaces:
+
+  - Collection
+  - List
+  - Set
+  - Queue
+  - Deque
+
+  Map interfaces:
+
+  - Map
+  - SortedMap
+  - NavigableMap
+  - ConcurrentMap
+  - ConcurrentNavigableMap
+
+  Sorted/ordered collection interfaces:
+
+  - SortedSet
+  - NavigableSet
+  - SequencedCollection
+  - SequencedSet
+  - SequencedMap
+
+  Blocking/concurrent interfaces:
+
+  - BlockingQueue
+  - BlockingDeque
+  - TransferQueue
+
+  12. Common CS Data Structures Represented in Java
+
+  These may not always have a dedicated class name, but Java supports them via classes above:
+
+  - Dynamic array → ArrayList
+  - Linked list → LinkedList
+  - Stack → Stack, Deque, ArrayDeque
+  - Queue → Queue, LinkedList, ArrayDeque
+  - Deque → ArrayDeque, LinkedList, ConcurrentLinkedDeque
+  - Hash table → HashMap, Hashtable, ConcurrentHashMap
+  - Tree / balanced BST → TreeMap, TreeSet
+  - Heap → PriorityQueue, PriorityBlockingQueue
+  - Skip list → ConcurrentSkipListMap, ConcurrentSkipListSet
+  - Bit vector → BitSet
+
+  Practical “complete” JDK implementation list
+
+  - ArrayList
+  - LinkedList
+  - Vector
+  - Stack
+  - CopyOnWriteArrayList
+  - HashSet
+  - LinkedHashSet
+  - CopyOnWriteArraySet
+  - ConcurrentSkipListSet
+  - ArrayDeque
+  - PriorityQueue
+  - ConcurrentLinkedQueue
+  - ConcurrentLinkedDeque
+  - ArrayBlockingQueue
+  - LinkedBlockingQueue
+  - LinkedBlockingDeque
+  - PriorityBlockingQueue
+  - LinkedTransferQueue
+  - HashMap
+  - LinkedHashMap
+  - TreeMap
+  - Hashtable
+  - WeakHashMap
+  - IdentityHashMap
+  - EnumMap
+  - ConcurrentHashMap
+  - ConcurrentSkipListMap
+  - Properties
+  - BitSet
